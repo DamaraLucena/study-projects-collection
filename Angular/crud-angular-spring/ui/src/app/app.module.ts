@@ -1,10 +1,11 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
-import {MatToolbar} from "@angular/material/toolbar";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatToolbar } from "@angular/material/toolbar";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {MatToolbar} from "@angular/material/toolbar";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbar
+    MatToolbar,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync('noop')
