@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {MatToolbar} from "@angular/material/toolbar";
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,6 +15,7 @@ import {MatToolbar} from "@angular/material/toolbar";
     BrowserModule,
     AppRoutingModule,
     MatToolbar
+
   ],
   providers: [
     provideAnimationsAsync('noop')
